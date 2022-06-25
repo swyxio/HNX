@@ -1,0 +1,29 @@
+body {font-family: verdana,helvetica, arial, sans-serif;font-size: 10pt;}
+a {text-decoration:none; color:#000;}
+a:hover {text-decoration:underline;}
+#container, #spinner { background:#F6F6EF;}
+#header {height:26px; background: #f60; color:#222;}
+#header img { border: 1px solid #fff; float:left; margin:3px;}
+#header a, #header span, #header h1 { color:#222; float:left; margin:5px 2px 0 5px; }
+#title, a#title { font-weight:bold; font-size:14px; margin-top:5px; }
+#feed {min-width:auto; margin:5px; font-size:9pt; padding-bottom:2px; }
+#feed table, #feed a:visited, #feed a.comments, #feed td:nth-child(1), #footer, #footer a, #searchbox { color:#828282;}
+#feed td { vertical-align:top; }
+.link { padding: 2px 0px; }
+.link span { margin-right:3px;}
+.comments { font-size:7pt; margin-left:5px; }
+.error {white-space: nowrap;color: red;}
+#footer {font-size:11px;}
+.left {float:left;}
+.right {float:right;}
+#spinner {height:300px; text-align:center; padding-top:50px;}
+#searchbox { margin:12px 3px 0 26px; font-size:11px; width:215px;}
+#searchbutton {font-family:courier;}
+
+#OptionsPage #header {margin-bottom:20px;}
+#OptionsPage #container {width:85%; margin:auto;}
+#OptionsPage label {margin-right:10px;}
+#OptionsPage .second-radio {margin-left:10px;}
+#OptionsPage p { color:#828282;}
+#OptionsPage a {text-decoration:underline;}
+#OptionsPage #feed {margin-left:10px;}
