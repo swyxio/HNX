@@ -16,7 +16,10 @@ This extension has not yet been published. To use this you'll have to:
 - open `chrome://extensions/` and enable Developer mode
 - "Load unpacked" and open the folder that contains this repo
 
-enjoy!
+Now you should have the orange "Y" square in your chrome extensions list (I use it often enough that I "pin" it to the top.)
+
+- click it to see the HN front page, and search
+- whatever page you are on, you can use this extension to submit that current page
 
 ## See also
 
