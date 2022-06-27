@@ -85,10 +85,9 @@ function refreshLinks() {
 //Submit the current tab
 function submitCurrentTab() {
   console.log('submitCurrentTab!');
-  chrome.windows.getCurrent(function(win){
     chrome.tabs.query({
       active: true,
-      // lastFocusedWindow: true // this is supposed to work but doesnt, had to comment out
+      currentWindow: true // no longer lastChangedWindow
   }).then(tabs => {
       var tab = tabs[0];
       console.log('tab', Object.keys(tab))
@@ -98,7 +97,6 @@ function submitCurrentTab() {
         openUrl(submit_url, true);
       // }, 3000); // just for testing
     });
-  });
 }
 
 

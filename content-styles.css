@@ -1,0 +1,10 @@
+#hnx-anchor {
+  color: black
+}
+
+#hnx-anchor a {
+  color: darkcyan
+}
+#hnx-anchor a:hover {
+  color: darkgoldenrod
+}

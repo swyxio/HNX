@@ -17,8 +17,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://*.nytimes.com/*"],
-      // "css": ["my-styles.css"],
+      "matches": ["https://news.ycombinator.com/*"],
+      "css": ["content-styles.css"],
       "js": ["content-script.js"]
     }
   ],
@@ -29,6 +29,12 @@
   ],
   "host_permissions": [
     "https://news.ycombinator.com/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "injectedUI/*" ],
+      "matches": []
+    }
   ]
   // "content_security_policy": {
   //   "extension_pages": "script-src 'self' 'unsafe-eval' https://news.ycombinator.com; object-src 'self' 'unsafe-eval' https://news.ycombinator.com"
