@@ -5,7 +5,21 @@ This is an extension for Google Chrome that:
 
 - displays the latest links from Y Combinator's [Hacker News](https://news.ycombinator.com)
 - Offers a link for submitting the url of the current tab.
+- shows previous results when submitting in case someone recently submitted
 
+## Usage instructions
+
+This extension has not yet been published. To use this you'll have to:
+
+- clone this repo
+- open `chrome://extensions/` and enable Developer mode
+- "Load unpacked" and open the folder that contains this repo
+
+enjoy!
+
+## See also
+
+My other fave extension: https://github.com/sw-yx/Twitter-Links-beta
 
 ## Acknowledgements
 
