@@ -86,9 +86,17 @@ function refreshLinks() {
 function submitCurrentTab() {
   console.log('submitCurrentTab!');
   chrome.windows.getCurrent(function(win){
-    chrome.tabs.getSelected(win.id, function(tab){
+    chrome.tabs.query({
+      active: true,
+      // lastFocusedWindow: true // this is supposed to work but doesnt, had to comment out
+  }).then(tabs => {
+      var tab = tabs[0];
+      console.log('tab', Object.keys(tab))
       var submit_url = "https://news.ycombinator.com/submitlink?u=" + encodeURIComponent(tab.url) + "&t=" + encodeURIComponent(tab.title);
-      openUrl(submit_url, true);
+      console.log('submit_url', submit_url)
+      // setTimeout(() => { // just for testing
+        openUrl(submit_url, true);
+      // }, 3000); // just for testing
     });
   });
 }

@@ -15,12 +15,19 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://*.nytimes.com/*"],
+      // "css": ["my-styles.css"],
+      "js": ["content-script.js"]
+    }
+  ],
   "options_page":"options.html",
   "permissions": [
-    "storage"
+    "storage",
+    "tabs"
   ],
   "host_permissions": [
-    // "tabs",
     "https://news.ycombinator.com/"
   ]
   // "content_security_policy": {
