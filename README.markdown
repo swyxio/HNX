@@ -1,11 +1,12 @@
 ## Hacker News Extended
 
-
 This is an extension for Google Chrome that:
 
 - displays the latest links from Y Combinator's [Hacker News](https://news.ycombinator.com)
 - Offers a link for submitting the url of the current tab.
 - shows previous results when submitting in case someone recently submitted
+
+![https://pbs.twimg.com/media/FWO1kRkXoAMsBwE?format=jpg&name=4096x4096](https://pbs.twimg.com/media/FWO1kRkXoAMsBwE?format=jpg&name=4096x4096)
 
 ## Usage instructions
 
