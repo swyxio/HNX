@@ -57,16 +57,16 @@ if (location.pathname === '/submitlink') {
       // display
       hits.forEach(({title, comment_text, points, objectID, author, created_at}) => {
         const li = document.createElement('li')
+        const datediff = getDifferenceInDays(new Date(created_at), new Date())
+        li.innerHTML = `
+        <a href="https://news.ycombinator.com/item?id=${objectID}">${datediff}</a>
+        ${comment_text ? 
+          `<details> <summary> [${author}${points ? `, ${points}pts` : ''}]: comment</summary/> ${comment_text}</details>` : 
+          `<span> [${author}${points ? `, ${points}pts` : ''}]: ${title}</span>`
+          }
+        `
         ul.appendChild(li)
         li.style = 'text-align: left'
-        const a = document.createElement('a')
-        a.href = `https://news.ycombinator.com/item?id=${objectID}`
-        const datediff = getDifferenceInDays(new Date(created_at), new Date())
-        a.innerHTML = `${datediff}`
-        li.appendChild(a)
-        const span = document.createElement('span')
-        span.innerHTML = ` [${author}${points ? `, ${points}pts` : ''}]: ${title || comment_text}`
-        li.appendChild(span)
       })
     } else {
       // display

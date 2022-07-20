@@ -7,7 +7,7 @@ async function startRequest() {
   setTimeout(startRequest, 60000);
 }
 //If any options are not already set, they will be set to defaults here
-SetInitialOption("HN.RequestInterval", 1200000);
+SetInitialOption("HN.RequestInterval", 600000);
 SetInitialOption("HN.BackgroundTabs", false);
 
 startRequest();
@@ -19,7 +19,7 @@ var req;
 var buildPopupAfterResponse = false;
 var OnFeedSuccess = null;
 var OnFeedFail = null;
-var retryMilliseconds = 120000;
+var retryMilliseconds = 60000;
 
 function SetInitialOption(key, value) {
   chrome.storage.local.get([key], function(result) {
@@ -94,9 +94,6 @@ async function onRssSuccess(doc) {
   return setLocalStorage("HN.LastRefresh", new Date().getTime());
 }
 
-// function updateLastRefreshTime() {
-//   localStorage["HN.LastRefresh"] = (new Date()).getTime();
-// }
 
 async function onRssError(xhr, type, error) {
   return handleFeedParsingFailed('Failed to fetch RSS feed.');

@@ -2,9 +2,9 @@
 "update_url": "https://clients2.google.com/service/update2/crx",
 
   "manifest_version": 3,
-  "name": "Hacker News",
+  "name": "Swyx - HNX",
   "version": "3.21.0",
-  "description": "Displays recent stories from Hacker News",
+  "description": "Displays recent stories from Hacker News - swyx's fork",
   "icons": { "48": "icon48.png",
            "128": "icon128.png" },
   "action": {
